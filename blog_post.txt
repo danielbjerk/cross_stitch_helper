@@ -1,0 +1,14 @@
+some thoughts about cross stitching and dmc
+
+learned how to cross-stitch, results: (bilde av høne)
+
+need so many different threads to make whole book
+
+thoughts about ways to improve experience.
+
+Todo:
+- Recipe-book minimizer. Based on some cost function, involving size of- and aesthetic qualities of some minimal cover of all threads required by the book.
+- Substitue maker. For a given recipe and missing threads, create substitues (optionally, make substitutes you own)
+-> minimizer is application of substitution algorithm run on all recipes with all threads. Pick out thread most often picked as substitute for others.
+- "can I make it" - check, based on inventory (optionally with amount of thread incorporated)
+- "what can I make" - check, based on inventory (optionally with amount of thread incorporated)
