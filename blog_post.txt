@@ -12,3 +12,8 @@ Todo:
 -> minimizer is application of substitution algorithm run on all recipes with all threads. Pick out thread most often picked as substitute for others.
 - "can I make it" - check, based on inventory (optionally with amount of thread incorporated)
 - "what can I make" - check, based on inventory (optionally with amount of thread incorporated)
+
+
+
+Resources:
+(Java in Jekyll)[https://talk.jekyllrb.com/t/how-do-i-embed-javascript-in-jekyll/4374]
