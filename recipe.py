@@ -1,8 +1,9 @@
 def class Thread():
-	def __init__(self, producer, id_number):
+	def __init__(self, producer, id_number, color_name=None):
 		self.producer = producer	# "dmc"/other
 		self.id_number = id_number
 		self.RGB = (0, 0, 0)	# TODO: function/lookup here
+		self.color_name = color_name
 	
 	
 	
