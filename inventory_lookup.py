@@ -20,5 +20,5 @@ def all_makeable_recipes(recipe_book, inventory, num_willing_to_buy=3):
 			for act, sub in subs:
 				print(f"\t{act} -> {sub}")
 		if num_missing <= num_willing_to_buy:
-			start_of_message = "alternatively, " if can_make_with_subs else "{recipe} can almost be made"
+			start_of_message = "alternatively, " if can_make_with_subs else f"{recipe} can almost be made"
 			print(f"{start_of_message}, the only missing colors are: {exact_missing}")
