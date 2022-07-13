@@ -13,9 +13,9 @@ def class Recipe():
 		self.threads = threads
 		amounts_pr_thread = {}
 		self.pattern = pattern		# 2D-array of threads
-		self.shape = (len(pattern), len(pattern[0])
-		amounts_pr_thread = {}
 		if pattern:
+			self.shape = (len(pattern), len(pattern[0])
+			amounts_pr_thread = {}
 			for i in range(len(pattern)):
 				for j in range(len(pattern[i])):
 					thread_ij = pattern[i][j]
@@ -23,15 +23,19 @@ def class Recipe():
 						amounts_pr_thread[thread_ij] += 1
 					else:
 						amounts_pr_thread[thread_ij] = 1
+			self.amounts_pr_thread = amounts_pr_thread
 						
 	
 	def __str__(self):
-		return self.name
+		return str(self.name)
 					  
 					  
 	def __len__(self):
 		return len(self.threads)
 	
+	def __contains__(self,key):
+		return key in threads
+
 		
 
 def class RecipeBook():
