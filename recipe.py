@@ -1,20 +1,23 @@
-def class Thread():
+class Thread():
 	def __init__(self, producer, id_number, color_name=None):
 		self.producer = producer	# "dmc"/other
 		self.id_number = id_number
 		self.RGB = (0, 0, 0)	# TODO: function/lookup here
 		self.color_name = color_name
 	
+	def __eq__(self, __o: object) -> bool:
+		return self.producer == __o.producer and self.RGB == __o.RGB
 	
 	
-def class Recipe():
+	
+class Recipe():
 	def __init__(self, name, threads, pattern=None):
 		self.name = name
 		self.threads = threads
 		amounts_pr_thread = {}
 		self.pattern = pattern		# 2D-array of threads
 		if pattern:
-			self.shape = (len(pattern), len(pattern[0])
+			self.shape = tuple(len(pattern), len(pattern[0]))
 			amounts_pr_thread = {}
 			for i in range(len(pattern)):
 				for j in range(len(pattern[i])):
@@ -34,11 +37,11 @@ def class Recipe():
 		return len(self.threads)
 	
 	def __contains__(self,key):
-		return key in threads
+		return key in self.threads
 
 		
 
-def class RecipeBook():
+class RecipeBook():
 	def __init__(self, recipes, author, pages=None):
 		self.author = author
 		self.recipes = recipes
